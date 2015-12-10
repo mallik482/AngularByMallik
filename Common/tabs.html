@@ -1,0 +1,7 @@
+<div class="container" style="background: #F97A1F;">
+    <ul class="nav nav-tabs">
+        <li role="presentation" ng-class="{active:tab.selected}" ng-repeat="tab in tabNames" ng-click="clickTab(tab)">
+            <a ui-sref="{{tab.text}}">{{tab.text}}</a>
+        </li>
+    </ul>
+</div>

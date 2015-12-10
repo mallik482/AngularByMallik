@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="yatragenie">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" >
+        <link href="Assets/index.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.css" rel="stylesheet">
+        <link href="Assets/datePicker.css" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+        <div class="container" ng-controller="MainController">
+            <div class="row">
+                <div class="col-lg-12 navBar" ng-controller="navController" >
+                    <header>
+                        <ng-nav-bar></ng-nav-bar>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <tabs name='tabs' ></tabs>
+            </div>
+            <div class="row" id="searchForm">
+                <div class="col-lg-4">
+                    <div ui-view ></div>
+                </div>
+                <div class="col-lg-6">
+                    
+                </div>
+            </div>
+            <div ui-view></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="vendor/angular.min.js"></script>
+        <script src="vendor/angular-ui-router.min.js"></script>
+        <script src="vendor/Animate.js"></script>
+        <script src="vendor/Area.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.js"></script>
+        <script src="Common/mainApp.js"></script>
+        <script src="Common/formCtrl.js"></script>
+        <script src="Common/NavBar/nav.js"></script>
+        <script src="Common/CustomerCare/printCancel.js"></script>
+        <script src="Common/datePicker.js"></script>
+        
+       
+    </body>
+</html>
